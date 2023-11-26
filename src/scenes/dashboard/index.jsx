@@ -57,8 +57,7 @@ const Dashboard = () => {
           <StatBox
             title="12,361"
             subtitle="Emails Sent"
-            progress="0.75"
-            increase="+14%"
+            
             icon={
               <EmailIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -76,8 +75,7 @@ const Dashboard = () => {
           <StatBox
             title="431,225"
             subtitle="Sales Obtained"
-            progress="0.50"
-            increase="+21%"
+            
             icon={
               <PointOfSaleIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -95,8 +93,7 @@ const Dashboard = () => {
           <StatBox
             title="32,441"
             subtitle="New Clients"
-            progress="0.30"
-            increase="+5%"
+            
             icon={
               <PersonAddIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -114,8 +111,7 @@ const Dashboard = () => {
           <StatBox
             title="1,325,134"
             subtitle="Traffic Received"
-            progress="0.80"
-            increase="+43%"
+            
             icon={
               <TrafficIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -150,7 +146,7 @@ const Dashboard = () => {
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                ₹59,342.32
               </Typography>
             </Box>
             <Box>
@@ -161,9 +157,7 @@ const Dashboard = () => {
               </IconButton>
             </Box>
           </Box>
-          <Box height="250px" m="-20px 0 0 0">
-           
-          </Box>
+          
         </Box>
         <Box
           gridColumn="span 4"
@@ -210,7 +204,7 @@ const Dashboard = () => {
                 p="5px 10px"
                 borderRadius="4px"
               >
-                ${transaction.cost}
+                ₹{transaction.cost}
               </Box>
             </Box>
           ))}
@@ -238,7 +232,7 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              ₹48,352 revenue generated
             </Typography>
             <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
@@ -259,23 +253,7 @@ const Dashboard = () => {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
-        <Box
-          gridColumn="span 4"
-          gridRow="span 2"
-          backgroundColor={colors.primary[400]}
-          padding="30px"
-        >
-          <Typography
-            variant="h5"
-            fontWeight="600"
-            sx={{ marginBottom: "15px" }}
-          >
-            Geography Based Traffic
-          </Typography>
-          <Box height="200px">
-            
-          </Box>
-        </Box>
+        
       </Box>
     </Box>
   );
